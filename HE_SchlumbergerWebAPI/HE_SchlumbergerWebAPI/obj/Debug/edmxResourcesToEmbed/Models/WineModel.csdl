@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HackerEarthDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Wine">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="country" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="designation" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="points" Type="Int32" />
+    <Property Name="price" Type="Int32" />
+    <Property Name="province" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="region_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="region_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="variety" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="winery" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="HackerEarthDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Wines" EntityType="Self.Wine" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HackerEarthDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Wine">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="country" Type="nvarchar" MaxLength="255" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="designation" Type="nvarchar" MaxLength="255" />
+    <Property Name="points" Type="int" />
+    <Property Name="price" Type="int" />
+    <Property Name="province" Type="nvarchar" MaxLength="255" />
+    <Property Name="region_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="region_2" Type="nvarchar" MaxLength="255" />
+    <Property Name="variety" Type="nvarchar" MaxLength="255" />
+    <Property Name="winery" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="HackerEarthDBModelStoreContainer">
+    <EntitySet Name="Wine" EntityType="Self.Wine" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ArthHotelStoreContainer" CdmEntityContainer="HackerEarthDBEntities1">
+    <EntitySetMapping Name="arth_hotels">
+      <EntityTypeMapping TypeName="ArthHotel.arth_hotels">
+        <MappingFragment StoreEntitySet="arth_hotels">
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="categories" ColumnName="categories" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="reviews_rating" ColumnName="reviews_rating" />
+          <ScalarProperty Name="reviews_text" ColumnName="reviews_text" />
+          <ScalarProperty Name="reviews_title" ColumnName="reviews_title" />
+          <ScalarProperty Name="reviews_username" ColumnName="reviews_username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

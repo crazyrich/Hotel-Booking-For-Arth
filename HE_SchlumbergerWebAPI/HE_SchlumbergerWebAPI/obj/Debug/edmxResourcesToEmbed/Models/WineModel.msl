@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HackerEarthDBModelStoreContainer" CdmEntityContainer="HackerEarthDBEntities">
+    <EntitySetMapping Name="Wines">
+      <EntityTypeMapping TypeName="HackerEarthDBModel.Wine">
+        <MappingFragment StoreEntitySet="Wine">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="designation" ColumnName="designation" />
+          <ScalarProperty Name="points" ColumnName="points" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="region_1" ColumnName="region_1" />
+          <ScalarProperty Name="region_2" ColumnName="region_2" />
+          <ScalarProperty Name="variety" ColumnName="variety" />
+          <ScalarProperty Name="winery" ColumnName="winery" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
